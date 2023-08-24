@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars BookStore</title>
+  <style>
+    /* Reset default margins and paddings */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #343a40;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation bar styles */
+    nav {
+      background-color: #343a40;
+      color: rgba(255, 255, 255, 0.8);
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      margin-left: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin-right: 20px;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: bold;
+    }
+
+    /* Jumbotron styles */
+    .jumbotron {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .jumbotron h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .jumbotron p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Card styles */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #2c3034;
+      color: #fff;
+      border: none;
+      margin: 10px;
+      width: calc(33.33% - 20px); /* 3 cards per row */
+      max-width: 300px;
+      box-sizing: border-box;
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 500px; /* Limit image height */
+      object-fit: cover; /* Maintain aspect ratio and cover entire space */
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+    
+
+    /* Footer styles */
+    footer {
+      background-color: #343a40;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      /* Adjust navbar and jumbotron padding for smaller screens */
+      nav {
+        padding: 10px;
+      }
+
+      .jumbotron {
+        padding: 50px 0;
+      }
+
+      /* Adjust card width for smaller screens */
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      /* Adjust card width for even smaller screens */
+      .card {
+        width: calc(100% - 20px);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="navbar-brand">Star Wars</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Books</a></li>
+    <li><a href="aboutus.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="jumbotron">
+  <h2>Welcome to our Star Wars Bookstore!</h2>
+  <p>Explore our wide range of books and find your next favorite read.</p>
+  <a href="#" class="btn-primary">Browse Star Wars</a>
+</div>
+
+<div class="container">
+  <div class="card-container">
+    <!-- Repeat this block for each book -->
+    <div class="card">
+      <div class="card-body">
+        <img src="img/purge.jpg" alt="Book Cover">
+        <h5 class="card-title">PURGE</h5>
+        <p class="card-text">Author: STAR WARS</p>
+        <p class="card-text">Price: $19.99</p>
+        <a href="#" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+    <!-- End of repeated block -->
+    <div class="card">
+      <div class="card-body">
+        <img src="img/Star Wars from the Adventures of Luke Skywalker.jpg" alt="Book Cover">
+        <h5 class="card-title">Adventures of Luke</h5>
+        <p class="card-text">Author: STAR WARS</p>
+        <p class="card-text">Price: $19.99</p>
+        <a href="#" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="img/Star Wars Legends Epic Collection The Old Republic Vol. 1.jpge" alt="Book Cover">
+        <h5 class="card-title">Legends Epic Collection</h5>
+        <p class="card-text">Author: STAR WARS</p>
+        <p class="card-text">Price: $19.99</p>
+        <a href="#" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="img/Star Wars Showdown on the Smuggler's Moon.jpg" alt="Book Cover">
+        <h5 class="card-title">Showdown on the Smuggler's Moon</h5>
+        <p class="card-text">Author: STAR WARS</p>
+        <p class="card-text">Price: $19.99</p>
+        <a href="#" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="img/bounty.jpg" alt="Book Cover">
+        <h5 class="card-title">Bounty</h5>
+        <p class="card-text">Author: STAR WARS</p>
+        <p class="card-text">Price: $19.99</p>
+        <a href="#" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="img/Two Against the worlds.jpg" alt="Book Cover">
+        <h5 class="card-title">Two Against the worlds</h5>
+        <p class="card-text">Author: STAR WARS</p>
+        <p class="card-text">Price: $19.99</p>
+        <a href="#" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="img/rebellions.jpg" alt="Book Cover">
+        <h5 class="card-title">Rebellions</h5>
+        <p class="card-text">Author: STAR WARS</p>
+        <p class="card-text">Price: $19.99</p>
+        <a href="#" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="img/Death star.jpg" alt="Book Cover">
+        <h5 class="card-title">Victory & Death</h5>
+        <p class="card-text">Author: STAR WARS</p>
+        <p class="card-text">Price: $19.99</p>
+        <a href="#" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+    <!-- Repeat similar blocks for other books -->
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2023 Bookstore. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
